@@ -4,14 +4,14 @@
    ========================================================= */
 
 :root {
-  /* light theme */
-  --bg:           #f7f5f0;
-  --bg-soft:      #efece4;
+  /* light theme — warm cream */
+  --bg:           #faf3df;          /* cream */
+  --bg-soft:      #f1e8cb;          /* warmer cream for elevated bands */
   --fg:           #1a1a1d;
   --fg-soft:      #3a3a40;
-  --muted:        #6b6b73;
-  --rule:         #e3e0d7;
-  --card:         #ffffff;
+  --muted:        #6b6657;          /* slightly warmer muted */
+  --rule:         #e7dcb8;          /* soft beige rule */
+  --card:         #fffaeb;          /* off-cream for cards (slight elevation pop) */
   --accent:       #e85d04;          /* warm coral-orange */
   --accent-soft:  rgba(232, 93, 4, 0.10);
   --selection:    rgba(232, 93, 4, 0.22);
@@ -677,6 +677,13 @@ html[data-theme="dark"] .gh-chart img {
   color: var(--fg);
   word-break: break-word;
 }
+.contact-card .v.action {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  letter-spacing: 0.01em;
+}
 .cc-email   { --card-color: #14b8a6; }
 .cc-phone   { --card-color: #f59e0b; }
 .cc-gh      { --card-color: #6366f1; }
@@ -866,8 +873,8 @@ html[data-theme="dark"] .gh-chart img {
    ========================================================= */
 .reveal {
   opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 600ms ease, transform 600ms cubic-bezier(.2,.7,.2,1);
+  transform: translateY(6px);
+  transition: opacity 280ms ease, transform 280ms cubic-bezier(.2,.7,.2,1);
 }
 .reveal.in { opacity: 1; transform: translateY(0); }
 @media (prefers-reduced-motion: reduce) {

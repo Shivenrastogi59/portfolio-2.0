@@ -76,9 +76,14 @@
     }
   }
 
-  // ---- reveal on scroll ----
+  // ---- reveal on scroll (skip animation for already-visible sections so hash nav feels instant) ----
   const reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && reveals.length) {
+    const vh = window.innerHeight;
+    reveals.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < vh && r.bottom > 0) el.classList.add("in");
+    });
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
@@ -88,9 +93,9 @@
           }
         });
       },
-      { threshold: 0.08 }
+      { threshold: 0.06, rootMargin: "0px 0px -8% 0px" }
     );
-    reveals.forEach((el) => io.observe(el));
+    reveals.forEach((el) => { if (!el.classList.contains("in")) io.observe(el); });
   } else {
     reveals.forEach((el) => el.classList.add("in"));
   }
