@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Shiven Rastogi</title>
+  <meta name="description" content="All projects by Shiven Rastogi — AI engineering, full-stack, and infrastructure." />
+  <meta name="theme-color" content="#0c0c0e" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e85d04'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='-apple-system,Segoe UI,sans-serif' font-size='36' font-weight='700' fill='white'%3ES%3C/text%3E%3C/svg%3E" />
+
+  <style>
+    html { background-color: #f7f5f0; color-scheme: light; }
+    html[data-theme="dark"] { background-color: #0c0c0e; color-scheme: dark; }
+    body { visibility: hidden; }
+    html.ready body { visibility: visible; }
+  </style>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('shiven.theme');
+        var sys = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', saved || (sys ? 'dark' : 'light'));
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap-wide topbar-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>shiven</span>
+      </a>
+      <nav id="topnav" class="topnav" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="index.html#stack">Stack</a>
+        <a href="certifications.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="topbar-end">
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="topnav" title="Menu">
+          <svg class="icon-burger" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap-wide">
+    <section class="page-head">
+      <a class="crumb" href="index.html">← Back home</a>
+      <h1>Projects</h1>
+      <p class="lede">A selection of things I've built — across AI engineering, full-stack, and infrastructure. Each one started with a real problem and shipped to real users.</p>
+    </section>
+
+    <section class="s-projects">
+      <div class="proj-list">
+
+        <article class="proj-card reveal">
+          <div class="proj-card-head">
+            <div class="proj-card-title">
+              <span class="mark m-host" aria-hidden="true"><span class="mark-letter">H</span></span>
+              <h3>Website Hosting Platform</h3>
+            </div>
+            <a class="see-all" href="https://github.com/Shivenrastogi59" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+          <p>A full-stack platform that lets developers deploy static sites directly from a GitHub repo. Cloudflare R2 for object storage, Redis for caching and queueing, and a responsive dashboard that surfaces build &amp; deploy state in real time.</p>
+          <div class="proj-tags">
+            <span>MERN</span><span>Cloudflare R2</span><span>Redis</span><span>GitHub API</span><span>Docker</span>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-card-head">
+            <div class="proj-card-title">
+              <span class="mark m-music" aria-hidden="true"><span class="mark-letter">M</span></span>
+              <h3>AI-Powered Music Therapy</h3>
+            </div>
+            <a class="see-all" href="https://github.com/Shivenrastogi59" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+          <p>A clinical-adjacent platform that detects a patient's emotional state and surrounding context, then drives a dynamic music generation pipeline tuned for therapeutic outcomes. Models run end-to-end with a clean MERN front for clinicians.</p>
+          <div class="proj-tags">
+            <span>YOLOv8</span><span>VGG16</span><span>Fal.ai</span><span>Flask</span><span>MongoDB</span><span>React</span><span>Node</span>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-card-head">
+            <div class="proj-card-title">
+              <span class="mark m-hack" aria-hidden="true"><span class="mark-letter">E</span></span>
+              <h3>Hackathon Evaluation Automation</h3>
+            </div>
+            <a class="see-all" href="https://github.com/Shivenrastogi59" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+          <p>Led a team of seven to build an LLM-powered judging platform deployed at the Internal Smart India Hackathon 2025 (GLAU). The system ingested submissions via Google Forms, ran them through Gemini 2.5 Pro and GPT-4o pipelines, and produced calibrated rubric scores — evaluating <b>90 teams</b> across <b>6 judges</b>.</p>
+          <div class="proj-tags">
+            <span>Gemini 2.5 Pro</span><span>GPT-4o</span><span>LangChain</span><span>MERN</span><span>Google Forms</span>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-card-head">
+            <div class="proj-card-title">
+              <span class="mark" style="--mark-bg:#0e7490;--mark-fg:#fff" aria-hidden="true"><span class="mark-letter">A</span></span>
+              <h3>AIOps Conversational Systems</h3>
+            </div>
+            <a class="see-all" href="#" aria-label="Internal at Nile Technologies">Internal</a>
+          </div>
+          <p>At Nile Technologies — production RAG, GraphRAG and Agentic RAG pipelines for AIOps. Cut manual operational effort by <b>40%</b> and issue resolution time by <b>35%</b>. Deployed across GCP and AWS with a focus on latency and inference cost.</p>
+          <div class="proj-tags">
+            <span>LangChain</span><span>CrewAI</span><span>GraphRAG</span><span>GCP</span><span>AWS</span>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-card-head">
+            <div class="proj-card-title">
+              <span class="mark" style="--mark-bg:#7f1d1d;--mark-fg:#fff" aria-hidden="true"><span class="mark-letter">P</span></span>
+              <h3>Pathology Report Causal LM</h3>
+            </div>
+            <a class="see-all" href="#" aria-label="Internal at Yantra Pragya">Internal</a>
+          </div>
+          <p>At Yantra Pragya — fine-tuned a causal language model to read pathology reports and answer follow-up medical queries, reducing hallucinations by <b>30%</b>. Wrapped in a real-time MERN prototype for interactive document processing &amp; validation.</p>
+          <div class="proj-tags">
+            <span>Causal LM</span><span>Fine-tuning</span><span>Medical AI</span><span>MERN</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Built by hand · <span id="year"></span> · <a href="index.html">← Back home</a></p>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>

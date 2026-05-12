@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shiven Rastogi</title>
+  <meta name="description" content="Shiven Rastogi — AI engineer and software architect building multi-agent workflows, RAG systems, and production-grade AI applications." />
+  <meta name="author" content="Shiven Rastogi" />
+  <meta name="theme-color" content="#0c0c0e" />
+
+  <meta property="og:title" content="Shiven Rastogi" />
+  <meta property="og:description" content="AI engineer and software architect building production-grade AI systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://github.com/Shivenrastogi59.png" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e85d04'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='-apple-system,Segoe UI,sans-serif' font-size='36' font-weight='700' fill='white'%3ES%3C/text%3E%3C/svg%3E" />
+
+  <style>
+    html { background-color: #f7f5f0; color-scheme: light; }
+    html[data-theme="dark"] { background-color: #0c0c0e; color-scheme: dark; }
+    body { visibility: hidden; }
+    html.ready body { visibility: visible; }
+  </style>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('shiven.theme');
+        var sys = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', saved || (sys ? 'dark' : 'light'));
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>shiven</span>
+      </a>
+      <nav id="topnav" class="topnav" aria-label="Primary">
+        <a href="#work" data-nav="work">Work</a>
+        <a href="projects.html" data-nav="projects">Projects</a>
+        <a href="#stack" data-nav="stack">Stack</a>
+        <a href="certifications.html" data-nav="certifications">Certificates</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="topbar-end">
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="topnav" title="Menu">
+          <svg class="icon-burger" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <span id="top"></span>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-row">
+        <img class="avatar" src="https://github.com/Shivenrastogi59.png" alt="Portrait of Shiven Rastogi" width="86" height="86" loading="eager" />
+        <div class="hero-meta">
+          <h1>Shiven Rastogi</h1>
+          <p class="hero-tag">AI engineer · software architect · building <em>real systems</em> that ship.</p>
+          <p class="hero-loc">
+            <span class="status-live" aria-hidden="true"></span>
+            Currently at <a href="#work" class="ilink">Nile Technologies</a> · Noida, IN
+          </p>
+        </div>
+      </div>
+
+      <ul class="hero-actions" role="list">
+        <li><a class="btn primary" data-resume href="Resume%26Certificates/Shiven__Resume.pdf">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          Résumé
+        </a></li>
+        <li><a class="btn ghost" href="contact.html">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+          Contact
+        </a></li>
+        <li><a class="btn ghost btn-icon" href="https://github.com/Shivenrastogi59" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.7.2 2.9.1 3.2.7.9 1.2 1.9 1.2 3.2 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          <span class="btn-label">GitHub</span>
+        </a></li>
+        <li><a class="btn ghost btn-icon" href="https://www.linkedin.com/in/shiven-rastogi" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5V9h3v10zM6.5 7.7a1.7 1.7 0 110-3.4 1.7 1.7 0 010 3.4zM19 19h-3v-5.5c0-1.3-.5-2.2-1.7-2.2-1 0-1.5.7-1.7 1.4-.1.2-.1.6-.1.9V19h-3V9h3v1.4c.4-.6 1.1-1.6 2.9-1.6 2.1 0 3.6 1.4 3.6 4.3V19z"/></svg>
+          <span class="btn-label">LinkedIn</span>
+        </a></li>
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- ABOUT -->
+    <section id="about" class="section s-about reveal">
+      <header class="sect-head">
+        <h2>About</h2>
+        <span class="sect-meta">intro</span>
+      </header>
+      <div class="about-body">
+        <p class="about-greet">Hello there!</p>
+        <p>I build AI systems that ship — multi-agent workflows, intelligent automation platforms, backend systems, and scalable AI applications. <strong>Not just proof-of-concepts</strong>, but systems designed for real-world execution and reliability.</p>
+        <p>Part AI engineer, part software architect. I work across AI engineering, backend infrastructure, and full-stack development — building applications involving logistics, competition platforms, conversational AI, and medical AI workflows.</p>
+        <p>I care about <strong>architecture</strong>, <strong>scalability</strong>, and turning fast-moving ideas into production-ready systems that create measurable impact.</p>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- WORK EXPERIENCE -->
+    <section id="work" class="section s-work reveal">
+      <header class="sect-head">
+        <h2>Work Experience</h2>
+        <span class="sect-meta">2 roles · current</span>
+      </header>
+
+      <article class="entry">
+        <span class="mark m-nile" aria-hidden="true"><span class="mark-letter">N</span></span>
+        <div class="entry-body">
+          <div class="entry-head">
+            <h3>AI Developer Intern <span class="at">· <a class="ilink" href="https://niletechnologies.com" target="_blank" rel="noopener">Nile Technologies</a></span></h3>
+            <span class="when">Oct 2025 — Present</span>
+          </div>
+          <p class="role-meta">Conversational AI · RAG · GraphRAG · Agentic systems</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <span class="mark m-yantra" aria-hidden="true"><span class="mark-letter">Y</span></span>
+        <div class="entry-body">
+          <div class="entry-head">
+            <h3>AI Intern <span class="at">· <a class="ilink" href="https://yantrapragya.com" target="_blank" rel="noopener">Yantra Pragya</a></span></h3>
+            <span class="when">May 2025 — Sep 2025</span>
+          </div>
+          <p class="role-meta">Causal LMs · Medical AI · MERN prototype</p>
+        </div>
+      </article>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- MAJOR PROJECTS -->
+    <section id="projects-preview" class="section s-projects reveal">
+      <header class="sect-head">
+        <h2>Major Projects</h2>
+        <a class="see-all" href="projects.html">See all →</a>
+      </header>
+
+      <article class="entry">
+        <span class="mark m-host" aria-hidden="true"><span class="mark-letter">H</span></span>
+        <div class="entry-body">
+          <div class="entry-head">
+            <h3>Website Hosting Platform</h3>
+            <span class="when">MERN · R2 · Redis</span>
+          </div>
+          <p>Full-stack platform to deploy static sites straight from GitHub. Cloudflare R2 storage, Redis caching, real-time build feedback.</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <span class="mark m-music" aria-hidden="true"><span class="mark-letter">M</span></span>
+        <div class="entry-body">
+          <div class="entry-head">
+            <h3>AI-Powered Music Therapy</h3>
+            <span class="when">YOLOv8 · VGG16 · Fal.ai</span>
+          </div>
+          <p>Real-time emotion &amp; context recognition driving dynamic music generation as an adjunct therapy tool.</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <span class="mark m-hack" aria-hidden="true"><span class="mark-letter">E</span></span>
+        <div class="entry-body">
+          <div class="entry-head">
+            <h3>Hackathon Evaluation Automation</h3>
+            <span class="when">Gemini 2.5 · GPT-4o · LangChain</span>
+          </div>
+          <p>LLM-judging platform deployed at Internal SIH 2025 — evaluated <b>90 teams</b> across <b>6 judges</b>.</p>
+        </div>
+      </article>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- STACK -->
+    <section id="stack" class="section s-stack reveal">
+      <header class="sect-head">
+        <h2>Stack</h2>
+        <span class="sect-meta">things I reach for</span>
+      </header>
+
+      <div class="stack-group">
+        <h4 class="stack-title">Languages</h4>
+        <ul class="logos" role="list">
+          <li><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="18" height="18"/><span>Python</span></li>
+          <li><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="18" height="18"/><span>JavaScript</span></li>
+          <li><img src="https://cdn.simpleicons.org/openjdk/ED8B00" alt="Java" width="18" height="18"/><span>Java</span></li>
+          <li><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="SQL" width="18" height="18"/><span>SQL</span></li>
+          <li><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="NoSQL" width="18" height="18"/><span>NoSQL</span></li>
+        </ul>
+      </div>
+
+      <div class="stack-group">
+        <h4 class="stack-title">AI &amp; ML</h4>
+        <ul class="logos" role="list">
+          <li><img src="https://cdn.simpleicons.org/langchain/1C3C3C" alt="LangChain" width="18" height="18"/><span>LangChain</span></li>
+          <li><img src="https://cdn.simpleicons.org/langgraph/1E1E1E" alt="LangGraph" width="18" height="18" onerror="this.onerror=null;this.src='https://cdn.simpleicons.org/langchain/1C3C3C'"/><span>LangGraph</span></li>
+          <li><img src="https://cdn.simpleicons.org/crewai/FF5A50" alt="CrewAI" width="18" height="18" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'text-logo',style:'background:#FF5A50;color:#fff',textContent:'CR'}))"/><span>CrewAI</span></li>
+          <li><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="HF" width="18" height="18"/><span>Hugging Face</span></li>
+          <li><img src="https://cdn.simpleicons.org/kaggle/20BEFF" alt="Kaggle" width="18" height="18"/><span>Kaggle</span></li>
+          <li><img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" width="18" height="18"/><span>n8n</span></li>
+        </ul>
+      </div>
+
+      <div class="stack-group">
+        <h4 class="stack-title">Web</h4>
+        <ul class="logos" role="list">
+          <li><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="18" height="18"/><span>React</span></li>
+          <li><img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" width="18" height="18"/><span>Node</span></li>
+          <li><img src="https://cdn.simpleicons.org/express/000000" alt="Express" width="18" height="18"/><span>Express</span></li>
+          <li><img src="https://cdn.simpleicons.org/flask/000000" alt="Flask" width="18" height="18"/><span>Flask</span></li>
+          <li><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" width="18" height="18"/><span>MongoDB</span></li>
+          <li><img src="https://cdn.simpleicons.org/redis/FF4438" alt="Redis" width="18" height="18"/><span>Redis</span></li>
+          <li><img src="https://cdn.simpleicons.org/postman/FF6C37" alt="Postman" width="18" height="18"/><span>Postman</span></li>
+        </ul>
+      </div>
+
+      <div class="stack-group">
+        <h4 class="stack-title">Cloud &amp; Infra</h4>
+        <ul class="logos" role="list">
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" width="22" height="22" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'text-logo',style:'background:#FF9900;color:#fff',textContent:'AWS'}))"/><span>AWS</span></li>
+          <li><img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="GCP" width="18" height="18"/><span>GCP</span></li>
+          <li><img src="https://cdn.simpleicons.org/cloudflare/F38020" alt="Cloudflare" width="18" height="18"/><span>Cloudflare</span></li>
+          <li><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="18" height="18"/><span>Docker</span></li>
+          <li><img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux" width="18" height="18"/><span>Linux</span></li>
+          <li><img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="18" height="18"/><span>Git</span></li>
+          <li><img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" width="18" height="18"/><span>GitHub</span></li>
+        </ul>
+      </div>
+
+      <div class="stack-group">
+        <h4 class="stack-title">Concepts</h4>
+        <p class="concepts">
+          OOP · DSA · System Design · DBMS · OS · Computer Networks · Machine Learning · Deep Learning · LLMs · RAG · Neural Networks · Agile · Microservices · SDLC · Model Context Protocol
+        </p>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- EDUCATION -->
+    <section id="education" class="section s-edu reveal">
+      <header class="sect-head">
+        <h2>Education</h2>
+        <span class="sect-meta">2022 — 2026</span>
+      </header>
+
+      <article class="entry">
+        <span class="mark m-gla" aria-hidden="true"><span class="mark-letter">G</span></span>
+        <div class="entry-body">
+          <div class="entry-head">
+            <h3>B.Tech CSE — AI &amp; ML <span class="at">· <a class="ilink" href="https://www.gla.ac.in" target="_blank" rel="noopener">GLA University, Mathura</a></span></h3>
+            <span class="when">Sept 2022 — May 2026</span>
+          </div>
+          <p class="role-meta">GPA <b>8.43 / 10.0</b></p>
+        </div>
+      </article>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section s-achv reveal">
+      <header class="sect-head">
+        <h2>Achievements</h2>
+        <span class="sect-meta">selected</span>
+      </header>
+
+      <ul class="achv" role="list">
+        <li>
+          <span class="bullet" aria-hidden="true">★</span>
+          <div>Coordinator at <strong>IBM ICE CodeCrunch</strong> — a national-level hackathon.</div>
+        </li>
+        <li>
+          <span class="bullet" aria-hidden="true">✎</span>
+          <div>1st Prize — <strong>LEKHAK</strong> poetry competition.</div>
+        </li>
+        <li>
+          <span class="bullet" aria-hidden="true">✦</span>
+          <div>Certificate of Appreciation for mentoring at Internal Smart India Hackathon 2025 (GLAU).</div>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- GITHUB -->
+    <section id="github" class="section s-gh reveal">
+      <header class="sect-head">
+        <h2>GitHub</h2>
+        <a class="see-all" href="https://github.com/Shivenrastogi59" target="_blank" rel="noopener">@Shivenrastogi59 →</a>
+      </header>
+
+      <a class="gh-chart" href="https://github.com/Shivenrastogi59" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <img src="https://ghchart.rshah.org/e85d04/Shivenrastogi59" alt="Shiven's GitHub contribution graph" loading="lazy"/>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <p>Built by hand · <span id="year"></span> · <a href="#top">Back to top ↑</a></p>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
