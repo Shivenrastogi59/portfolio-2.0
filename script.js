@@ -8,15 +8,6 @@
   const THEME_KEY = "shiven.theme";
 
   // ---- theme (inline <head> script already set data-theme; this is the toggle wiring) ----
-  // mark page as ready so visibility:hidden on body lifts (prevents FOUC across pages)
-  const markReady = () => root.classList.add("ready");
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(markReady);
-    // safety fallback in case fonts hang
-    setTimeout(markReady, 600);
-  } else {
-    requestAnimationFrame(markReady);
-  }
 
   const toggle = document.getElementById("themeToggle");
   if (toggle) {
