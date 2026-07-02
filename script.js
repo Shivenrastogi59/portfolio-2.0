@@ -124,7 +124,7 @@
   }
 
   // ---- résumé modal (PDF preview + download) ----
-  const RESUME_URL = "Resume%26Certificates/Shiven__Resume.pdf";
+  const RESUME_URL = "Resume%26Certificates/Shiven_Rastogi.pdf";
   let modal = null;
 
   function buildModal() {
